@@ -1,0 +1,16 @@
+for japanstocksticker => i used market cap over 2B and volume over 100k
+for s&p500 => i fetched all the data since end of 2022 daily but for
+ 50min since it gave the last 730 days i just fetched those so i have 
+ not split the training and test data
+for france 31=> market cap over 1b and volume over 1m
+
+
+
+I used this code to extract the list of the ticker from yahoo finance
+const nodes = document.querySelectorAll('span.symbol');
+
+// 2. Pull out (and trim) their text
+const symbols = Array.from(nodes, n => n.textContent.trim());
+
+// 3. Show them in the console
+console.log(symbols);

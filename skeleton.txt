@@ -1,0 +1,23 @@
+financial-fine-tuning/
+├── data/
+│   ├── raw/          # untouched downloads (.parquet)
+│   ├── interim/      # after cleaning / calendar alignment
+│   └── processed/    # ML-ready tensors, numpy / arrow
+├── notebooks/        # exploratory analyses
+├── src/
+│   └── financial_ft/
+│       ├── data/
+│       │   ├── download_sp500.py
+│       │   ├── download_fx.py
+│       │   └── calendar.py
+│       ├── processing/
+│       │   ├── clean.py
+│       │   ├── window.py
+│       │   └── splits.py
+│       ├── models/
+│       └── utils.py
+├── configs/          # YAML or jsonnet for hyper-params
+├── tests/
+├── scripts/          # command-line wrappers
+├── pyproject.toml
+└── README.md
